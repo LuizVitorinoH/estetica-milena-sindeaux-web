@@ -1,0 +1,39 @@
+* {
+  padding: 3px 0px 2px 0px;
+  font-size: 14px;
+  background-color: #121212;
+  color: #d0d0d0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.header {
+  padding: 0px 150px 0px 150px;
+  width: 100%;
+}
+
+img {
+  width: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+
+i {
+  cursor: pointer;
+}
+
+.menu {
+  margin-top: 11px;
+}
+
+a:hover,
+i:hover {
+  color: #fefefe;
+}

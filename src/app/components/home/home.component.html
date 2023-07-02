@@ -1,0 +1,87 @@
+<div class="content">
+  <section>
+    <div id="video-container">
+      <video autoplay loop muted width="100%" height="100%">
+        <source [src]="videoUrl" type="video/mp4" />
+      </video>
+      <div class="text-overlay">
+        <h1 [ngClass]="{ show: showText }">Estética Milena Sindeaux</h1>
+        <h2 [ngClass]="{ show: showText }">Descubra sua melhor versão.</h2>
+        <div class="cta-button">
+          <button [ngClass]="{ show: showText }" class="btn">Saiba mais</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="about-section">
+      <h3>Sobre</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+        tincidunt, neque sit amet rutrum varius, tellus odio ultricies quam, in
+        lobortis velit ligula vel risus. Donec auctor, metus id dignissim
+        pharetra, ante ligula consectetur felis, nec auctor mauris neque sed
+        nunc.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div class="row image-section-div">
+      <div class="col-2 image-section" data-aos="fade-up-1">
+        <div class="img-1">
+          <img src="../../../assets/images/home/peso.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="image-section-div-2">
+      <div class="image-section-2" data-aos="fade-up-2">
+        <div class="img-2">
+          <img src="../../../assets/images/home/pele.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="image-section-div-3">
+      <div class="col-2 image-section-3" data-aos="fade-up-3">
+        <div class="img-3">
+          <img src="../../../assets/images/home/botox.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="contact-section-class">
+    <div class="contact-section">
+      <h3>Contato</h3>
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" formControlName="name" />
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" formControlName="email" />
+        </div>
+        <div class="form-group">
+          <label for="message">Mensagem:</label>
+          <textarea id="message" formControlName="message"></textarea>
+        </div>
+        <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
+      </form>
+    </div>
+    <div class="map-container">
+      <iframe
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB1Vkg3EYIdK1Z933UWCmMEkOoHDiOixQU&q=R.%20Paulo%20Moriyama%2C%20139%20-%20Vila%20Figueira%2C%20Suzano%20-%20SP%2C%2008676-080"
+        width="100%"
+        height="450"
+        frameborder="0"
+        style="border: 0"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+    </div>
+  </section>
+</div>

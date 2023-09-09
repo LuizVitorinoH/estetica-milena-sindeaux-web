@@ -1,24 +1,26 @@
 * {
   padding: 3px 0px 2px 0px;
-  font-size: 14px;
-  background-color: #121212;
+  font-size: 18px;
+  /* background-color: #121212; */
   color: #d0d0d0;
 }
 
 header {
+  background-color: transparent;
   position: fixed;
+  width: 100%;
+  z-index: 1000;
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: 9999;
 }
 .header {
-  padding: 0px 150px 0px 150px;
+  /* padding: 0px 150px 0px 150px; */
   width: 100%;
+
 }
 
 img {
-  width: 40px;
+  width: 60px;
 }
 
 a {
@@ -30,7 +32,7 @@ i {
 }
 
 .menu {
-  margin-top: 11px;
+  margin-top: 18px;
 }
 
 a:hover,

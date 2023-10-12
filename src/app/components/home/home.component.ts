@@ -9,7 +9,7 @@ import * as AOS from 'aos';
 })
 export class HomeComponent implements OnInit {
   contactForm!: FormGroup;
-  videoUrl = 'assets/images/home/home-video-1.mp4';
+  videoUrl = 'assets/images/home/home-video.mp4';
   showText = false;
 
   constructor(private formBuilder: FormBuilder) {}

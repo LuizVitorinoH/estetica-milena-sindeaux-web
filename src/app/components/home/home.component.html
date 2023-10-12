@@ -1,9 +1,10 @@
 <div class="content">
-  <section>
+  <section >
     <div id="video-container">
       <video autoplay loop muted width="100%" height="100%">
         <source [src]="videoUrl" type="video/mp4" />
       </video>
+      <!-- <span><img src="assets/images/home/home.gif" alt="" width="100%"></span> -->
       <div class="text-overlay">
         <h1 [ngClass]="{ show: showText }">Estética Milena Sindeaux</h1>
         <h2 [ngClass]="{ show: showText }">Descubra sua melhor versão.</h2>
@@ -13,7 +14,7 @@
       </div>
     </div>
   </section>
-  <section>
+  <!-- <section>
     <div class="about-section">
       <h3>Sobre</h3>
       <p>
@@ -24,14 +25,19 @@
         nunc.
       </p>
     </div>
-  </section>
+  </section> -->
   <section>
-    <div class="row image-section-div">
+    <div>
       <div class="col-2 image-section" data-aos="fade-up-1">
         <div class="img-1">
-          <img src="../../../assets/images/home/peso.png" alt="" />
+          <img src="../../../assets/images/home/peso.png" alt=""/>
         </div>
       </div>
+      <div class="emagrecimento-content">
+        <h2>Descubra o Segredo do Emagrecimento Saudável</h2>
+        <p>Emagrecer vai além da estética. Trata-se de saúde, bem-estar e autoestima. O caminho para o emagrecimento saudável envolve dedicação, disciplina e, acima de tudo, conhecimento. Aprenda conosco as melhores técnicas, dicas e métodos cientificamente comprovados para perder peso de maneira eficaz e duradoura.</p>
+        <a href="/dicas" class="learn-more-btn">Saiba Mais</a>
+    </div>
     </div>
   </section>
   <section>

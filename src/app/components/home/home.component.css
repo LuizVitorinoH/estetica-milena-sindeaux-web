@@ -21,7 +21,7 @@ video {
 
 h1 {
   color: #fff;
-  font-size: 40px;
+  font-size: 250%;
   font-weight: 600;
   font-family: "Quicksand", sans-serif;
   opacity: 0;
@@ -137,6 +137,29 @@ img {
   background-color: #eae7e7;
   display: flex;
   justify-content: flex-end;
+}
+
+.emagrecimento-content {
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.8); /* fundo branco com opacidade */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra suave */
+  text-align: center;
+  margin: 20px auto;
+}
+
+.emagrecimento-content h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.emagrecimento-content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 20px;
 }
 
 .img-2 {

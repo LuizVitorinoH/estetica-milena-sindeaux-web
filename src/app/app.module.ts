@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
@@ -11,6 +11,7 @@ import { CourseComponent } from './pages/course/course.component';
 import { TipsComponent } from './pages/tips/tips.component';
 import { BlogComponent } from './pages/blog/blog.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 @NgModule({
   declarations: [
@@ -24,8 +25,9 @@ import { ContactComponent } from './pages/contact/contact.component';
     BlogComponent,
     ContactComponent,
   ],
-  imports: [BrowserModule, ReactiveFormsModule, AppRoutingModule],
+  imports: [BrowserModule, ReactiveFormsModule, AppRoutingModule, CarouselModule.forRoot()],
   providers: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

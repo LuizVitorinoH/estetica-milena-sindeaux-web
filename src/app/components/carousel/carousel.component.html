@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 mx-auto">
+      <carousel [items]="slides">
+        <ng-template let-slide="item" ngxCarouselItem>
+          <img [src]="slide.image" alt="{{ slide.text }}" class="d-block w-100">
+          <div class="carousel-caption">
+            <h3>{{ slide.text }}</h3>
+          </div>
+        </ng-template>
+      </carousel>
+    </div>
+  </div>
+</div>

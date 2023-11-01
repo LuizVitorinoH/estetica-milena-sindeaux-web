@@ -14,30 +14,18 @@
       </div>
     </div>
   </section>
-  <!-- <section>
-    <div class="about-section">
-      <h3>Sobre</h3>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-        tincidunt, neque sit amet rutrum varius, tellus odio ultricies quam, in
-        lobortis velit ligula vel risus. Donec auctor, metus id dignissim
-        pharetra, ante ligula consectetur felis, nec auctor mauris neque sed
-        nunc.
-      </p>
-    </div>
-  </section> -->
   <section>
-    <div>
+    <div class="image-section-div">
       <div class="col-2 image-section" data-aos="fade-up-1">
         <div class="img-1">
           <img src="../../../assets/images/home/peso.png" alt=""/>
         </div>
       </div>
-      <div class="emagrecimento-content">
+      <!-- <div class="emagrecimento-content">
         <h2>Descubra o Segredo do Emagrecimento Saudável</h2>
         <p>Emagrecer vai além da estética. Trata-se de saúde, bem-estar e autoestima. O caminho para o emagrecimento saudável envolve dedicação, disciplina e, acima de tudo, conhecimento. Aprenda conosco as melhores técnicas, dicas e métodos cientificamente comprovados para perder peso de maneira eficaz e duradoura.</p>
         <a href="/dicas" class="learn-more-btn">Saiba Mais</a>
-    </div>
+    </div> -->
     </div>
   </section>
   <section>
@@ -58,36 +46,23 @@
       </div>
     </div>
   </section>
-  <section class="contact-section-class">
-    <div class="contact-section">
-      <h3>Contato</h3>
-      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-        <div class="form-group">
-          <label for="name">Nome:</label>
-          <input type="text" id="name" formControlName="name" />
-        </div>
-        <div class="form-group">
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" formControlName="email" />
-        </div>
-        <div class="form-group">
-          <label for="message">Mensagem:</label>
-          <textarea id="message" formControlName="message"></textarea>
-        </div>
-        <button type="submit" [disabled]="contactForm.invalid">Enviar</button>
-      </form>
-    </div>
-    <div class="map-container">
-      <iframe
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB1Vkg3EYIdK1Z933UWCmMEkOoHDiOixQU&q=R.%20Paulo%20Moriyama%2C%20139%20-%20Vila%20Figueira%2C%20Suzano%20-%20SP%2C%2008676-080"
-        width="100%"
-        height="450"
-        frameborder="0"
-        style="border: 0"
-        allowfullscreen=""
-        aria-hidden="false"
-        tabindex="0"
-      ></iframe>
+  <section class="header">
+    <div class="contact-section-class">
+      <div class="contact-section">
+        <!-- <app-carousel></app-carousel> -->
+      </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB1Vkg3EYIdK1Z933UWCmMEkOoHDiOixQU&q=R.%20Paulo%20Moriyama%2C%20139%20-%20Vila%20Figueira%2C%20Suzano%20-%20SP%2C%2008676-080"
+          width="100%"
+          height="450"
+          frameborder="0"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+        ></iframe>
+      </div>
     </div>
   </section>
 </div>
